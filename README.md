@@ -3,6 +3,11 @@
 A Docker Container that does nothing, forever.
 Useful if you need to configure other container, like traefik or caddy using labels.
 
+> [!IMPORTANT]  
+> The version of this repository you are seeing is likely a mirror.
+>
+> If you want to contribute any changes please head over to [git.watn3y.de](https://git.watn3y.de/watn3y/nothing) and register an account.
+
 ## Why this exists
 
 I use [lucaslorentz/caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy) to automatically configure caddy based on docker container labels. For better readability I wanted to split-up the config into multiple containers. While it's possible to use something like ```docker run alpine:latest sleep infinity``` for this, I wanted something with a smaller image, less resource usage and a smaller attack surface.
