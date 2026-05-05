@@ -16,8 +16,9 @@ This is where **nothing** comes in. The image is about **3,8 KB** in size and us
 
 ## Running with Docker Compose
 
-Docker image: <https://hub.docker.com/r/watn3y/nothing>
-Docker image: <https://git.watn3y.de/watn3y/-/packages/container/nothing/versions>
+The Docker image is available on these registries.
+- [git.watn3y.de](https://git.watn3y.de/watn3y/-/packages/container/nothing/versions) - includes all tags
+- [Docker Hub](https://hub.docker.com/r/watn3y/nothing) - includes only releases
 
 Example compose file:
 
@@ -25,7 +26,7 @@ Example compose file:
 services:
   nothing:
     image: watn3y/nothing:v1.0.0
-    # image: watn3y/nothing:latest # Use :latest to be up to date with the master branch on git
+    # image: git.watn3y.de/watn3y/nothing:latest # Use :latest to be up to date with the master branch on git
     container_name: nothing
     restart: unless-stopped
     labels:
