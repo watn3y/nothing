@@ -17,7 +17,7 @@ This is where **nothing** comes in. The image is about **3,8 KB** in size and us
 ## Running with Docker Compose
 
 Docker image: <https://hub.docker.com/r/watn3y/nothing>
-Docker image: <https://git.watn3y.de/watn3y/nothing/packages>
+Docker image: <https://git.watn3y.de/watn3y/-/packages/container/nothing/versions>
 
 Example compose file:
 
