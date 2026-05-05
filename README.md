@@ -17,13 +17,15 @@ This is where **nothing** comes in. The image is about **3,8 KB** in size and us
 ## Running with Docker Compose
 
 Docker image: <https://hub.docker.com/r/watn3y/nothing>
+Docker image: <https://git.watn3y.de/watn3y/nothing/packages>
 
 Example compose file:
 
 ```yaml
 services:
   nothing:
-    image: watn3y/nothing:latest
+    image: watn3y/nothing:v1.0.0
+    # image: watn3y/nothing:latest # Use :latest to be up to date with the master branch on git
     container_name: nothing
     restart: unless-stopped
     labels:
